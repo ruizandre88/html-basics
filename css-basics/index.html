@@ -5,20 +5,32 @@
         <title> CSS Basics</title>
         <style>
             h1 {
-                color:purple
+                color:purple;
             }
 
             p {
-                color:red
+                color:red;
             }
-
+            .purple-text {
+                color:purple;
+            }
+            .important {
+                font-weight:bold;
+            }
+            #lead-paragraph {
+                color:purple;
+                font-weight:bold;
+            }
             body {
-                background-color:dodgerblue
+                background-color:dodgerblue;
             }
         </style>
     </head>
     <body>
         <h1>Welcome!</h1>
-        <p>Text goes here.</p>
+        <p class="purple-text">Text goes here.</p>
+
+        <p class="important purple-text">This is another line of text to be styled</p>
+        <p id="lead-paragraph">This text would go in a lead paragraph.</p>
     </body>
 </html>
