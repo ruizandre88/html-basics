@@ -5,7 +5,11 @@
         <title> CSS Basics</title>
         <style>
             h1 {
-                color:purple;
+                color:hsla(240,100,45,.5)
+                border-style: solid;
+                border-width: 1px;
+                border-color: red;
+
             }
 
             p {
@@ -17,6 +21,10 @@
             .important {
                 font-weight:bold;
             }
+            .important:hover {
+                background-color:#000504;
+            }
+
             #lead-paragraph {
                 color:purple;
                 font-weight:bold;
@@ -24,13 +32,35 @@
             body {
                 background-color:dodgerblue;
             }
+
+            a[href^="https://www.google.com"] {
+                background-color:white;
+                padding: 1rem;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #0000ff
+            }
+
+            a[href^="https://www.facebook.com"] {
+                background-color:red;
+            }
+            
+            img {
+                border-style: dashed;
+                border-width: 1px;
+                border-color: white;
+                
+            }
         </style>
     </head>
     <body>
         <h1>Welcome!</h1>
         <p class="purple-text">Text goes here.</p>
-
-        <p class="important purple-text">This is another line of text to be styled</p>
+        <p class="important">This is another line of text to be styled</p>
         <p id="lead-paragraph">This text would go in a lead paragraph.</p>
+        <a href="https://www.google.com/">Visit Google</a>
+        <a href="https://www.facebook.com/">Visit Facebook</a>
+        <img src= "https://live.staticflickr.com/3741/9310449034_6ba0d16ea8_b.jpg" width=25% alt="beach ocean view">
+
     </body>
 </html>
